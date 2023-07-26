@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weekly Task</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <h1><u>Inside the Web: A Simplified Explanation of Its Functioning</u></h1>
+    <style>
+        .highlight {
+            color: #ee3c8f;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            color: #007BFF;
+        }
+
+        h3 {
+            color: #007BFF;
+        }
+
+        h4 {
+            color:rgb(232, 101, 101)
+        }
+        .immg-html {
+            width: 300px;
+            align-items: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p>The article "How the Web Works" provides a simplified explanation of the process that occurs when a user views a webpage in a web browser. It begins by introducing the concept of clients and servers. Clients are devices, such as computers and phones, connected to the internet, while servers are computers that store webpages, sites, or apps.</p>
+        <img src="img/client-server.png" alt="https://lh4.googleusercontent.com/fw-vEeQBB676lkh6e2YvBCUf8vaY1eLHa4NcAalYPgTpa-L_xL4P1NvrgqQ_Mn_E7-O2WSKvVXvcoXkU0pNCrbtzbnhWkiwsPokk9bpY9HgQY0phI6syAuMmBtzPaFVjkK0PIW1Mfis">
+        <p><h3>Several other components are essential to the functioning of the web:</h3></p>
+        
+        <ol><h4><span class="highlight"></span>1. Internet Connection:</h4> This serves as the "street" between the client and the server, allowing data to be sent and received on the web.<br>
+        
+        <h4><span class="highlight"></span>2. TCP/IP:</h4> Transmission Control Protocol and Internet Protocol are communication protocols defining how data travels across the internet, similar to transport mechanisms like cars or bikes.<br>
+        
+        <h4><span class="highlight"></span>3. DNS:</h4> Domain Name System functions like an address book for websites. When a user enters a web address in their browser, the DNS translates it into the website's IP address, enabling the browser to find and retrieve the website.<br>
+        
+        <h4><span class="highlight"></span>4. HTTP:</h4> Hypertext Transfer Protocol is an application protocol that facilitates communication between clients and servers, acting as the language used to request and deliver web content.<br>
+        
+        <h4><span class="highlight"></span>5. Component Files:</h4> A website consists of different files, including code files (HTML, CSS, and JavaScript) and assets (images, music, video, documents, etc.).<br></ol>
+        
+        <p><h3>This is what happens when you enter a web address on your browser:</h3></p>
+        <ol>
+            <li> The browser goes to the DNS server to find the real address (IP) of the server hosting the website.</li><br><br>
+        
+            <li> The browser sends an HTTP request to the server, asking for a copy of the website.</li><br><br>
+            
+            <li> If the server approves the request, it sends a "200 OK" message and transmits the website's files as data packets.</li><br><br>
+            
+            <li> The browser assembles the data packets into a complete web page, which is displayed to the user.</li><br><br>
+        </ol>
+        <div style="display: flex; justify-content: centre;align-items: center;">
+            <img class="immg-html" src="html/html-css.jpeg" alt="https://cdn.educba.com/academy/wp-content/uploads/2018/06/HTML-vs-CSS.jpg">
+        
+        </div>
+        <p><h3>The order in which the web page works</h3>
+            <h4>HTML File:</h4>
+            <ol>
+                <li>Recognize "link" for CSS stylesheets</li>
+                <li>Recognize "script" for JavaScript files</li>
+            </ol>
+            <h4>External files</h4>
+            <ol>
+                <li>The HTML file sends requests for CSS and JavaScript files.</li>
+            </ol>
+            <h4>Parse CSS and JavaScript:</h4>
+            <ol>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"> DOM</a> tree from the parsed HTML<br>
+                A DOM connects web pages to scripts or programming languages by representing the structure of a document</li>
+                <li>Parse CSS creates a CSSOM<br>
+                 <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSSOM">CSS Object Model (CSSOM)</a> is a set of APIs(Application Program Interface) for reading and modifying a document's style-related (CSS) information</li>
+                <li>Parse JavaScript</li>
+            </ol>
+            <h4>Apply Styles and Execute JavaScript:</h4>
+            <ol>
+                <li>Combines <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"> DOM</a> and <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSSOM">CSS Object Model (CSSOM)</a> to execute Javascript</li>
+                <li>A visual representation of the page is displayed </li><br>
+            </ol>
+
+        </p>
+        
+        <p>
+            <h3>DNS Resolution:</h3> The DNS server returns the IP address of the website (e.g., 63.245.215.20) to your web browser. <br>
+            This IP address represents the unique location of the server hosting the website.<br><br>
+        </p>
+
+        <p><h3>Data Packets Transmission:</h3> Data is sent across the internet in small packets to ensure efficient and reliable delivery.<br> 
+            These packets may take different routes to reach the client and may be reassembled on the client's side.<br><br></p>
+        
+    <p><h3>Refrences</h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works">How Web Works</a></p>
+
+        
+</body>
+</html>
